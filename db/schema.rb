@@ -10,22 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_02_27_173225) do
+ActiveRecord::Schema[8.1].define(version: 2026_02_27_193854) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
   create_table "cards", force: :cascade do |t|
-    t.string "back"
+    t.string "back", null: false
     t.datetime "created_at", null: false
     t.bigint "deck_id", null: false
-    t.string "front"
+    t.string "front", null: false
     t.datetime "updated_at", null: false
     t.index ["deck_id"], name: "index_cards_on_deck_id"
   end
 
   create_table "decks", force: :cascade do |t|
     t.datetime "created_at", null: false
-    t.string "name"
+    t.string "name", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id", null: false
     t.index ["user_id"], name: "index_decks_on_user_id"
@@ -33,9 +33,9 @@ ActiveRecord::Schema[8.1].define(version: 2026_02_27_173225) do
 
   create_table "users", force: :cascade do |t|
     t.datetime "created_at", null: false
-    t.string "email"
-    t.string "name"
-    t.string "password_hash"
+    t.string "email", null: false
+    t.string "name", null: false
+    t.string "password_hash", null: false
     t.datetime "updated_at", null: false
   end
 
