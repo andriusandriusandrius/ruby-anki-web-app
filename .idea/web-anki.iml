@@ -10,7 +10,11 @@
       <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/tmp/cache" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="ruby-3.4.8-p72" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="net-pop (v0.1.2, ruby-3.4.8-p72) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="net-smtp (v0.5.1, ruby-3.4.8-p72) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="racc (v1.8.1, ruby-3.4.8-p72) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rexml (v3.4.4, ruby-3.4.8-p72) [gem]" level="application" />
   </component>
 </module>
